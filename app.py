@@ -37,6 +37,10 @@ inputs = [
     gr.Dropdown(choices=['Teacher', 'Health', 'Services',
                 'Farmer', 'Business'], label='Father Job'),
     gr.Dropdown(choices=['mother', 'father', 'other'], label='Guardian'),
+    gr.Radio(choices=['yes', 'no'], label='Smoker'),
+    gr.Number(label='Tuition Fee (in BDT)'),
+    gr.Number(label='Time Spent with Friends (hours per week)'),
+    gr.Slider(0, 5, step=0.01, label='SSC Result (GPA)'),
 ]
 #interface
 app = gr.Interface(
